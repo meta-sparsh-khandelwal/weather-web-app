@@ -1,0 +1,321 @@
+/* CSS Reset */
+*  {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* smooth scrolling for navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: url(images/homebg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Navigation bar */
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+#navbar ul {
+    display: flex;
+    column-gap: 2rem;
+    list-style: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#navbar ul li a:hover {
+    color: #e1dede;
+}
+.fa-brands{
+    margin: 0px 15px;
+    color: #fff!important;
+}
+
+/* banner in header */
+#banner {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 7%;
+}
+.banner-desc {
+    font-size: 2rem;
+    color: #ffffff;
+}
+.btn-primary {
+    font-size: 1rem;
+    color: #fff;
+    padding: 16px 23px;
+    margin-top: 50px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn-download {
+    background: #fd6941;
+}
+.btn-features {
+    background: #4563c5;
+}
+
+/* features section */
+#features {
+    padding: 30px;
+}
+.title, .small-desc {
+    text-align: center;
+    margin: 12px 0px;
+}
+.title {
+    color: #5b81ec;
+    font-size: 1.7rem;
+}
+.small-desc {
+    color: #878787;
+    font-size: 0.9rem;
+}
+.card-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 70px 10px;
+}
+.sm-card {
+    max-width: 25vw;
+    display: flex;
+}
+.sm-card i {
+    font-size: 3.2rem;
+    color: #fd6941;
+}
+.card-text {
+    margin: 5px 20px;
+}
+.card-text h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.card-text p {
+    font-size: 0.9rem;
+    color: #878787;
+}
+
+/* caraousel in features section */
+.caraousel{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 35px auto;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+.caraousel .item{
+    min-height: 120px;
+    max-height: auto;
+    position: relative;
+    box-shadow: 2px 5px 6px 4px #ebeae9;
+    transition: all 0.3s ease;
+}
+.caraousel #item1:hover, .caraousel #item2:hover, .caraousel #item3:hover, .caraousel #item4:hover, .caraousel #item5:hover {
+    box-shadow: 2px 4px 3px 5px #6e6d6d;
+    transform: rotateY(30deg);
+    cursor: pointer;
+}
+
+.caraousel #item1{
+    width: 150px;
+    left: 45px;
+    transform: perspective(160px) rotateY(15deg);
+}
+.caraousel #item2{
+    width: 180px;
+    left: 25px;
+    transform: perspective(230px) rotateY(15deg);
+}
+.caraousel #item3{
+    width: 240px;
+    z-index: 2;
+}
+.caraousel #item4{
+    width: 180px;
+    right: 25px;
+    transform: perspective(230px) rotateY(-15deg);
+    z-index: 1;
+}
+.caraousel #item5{
+    width: 150px;
+    right: 45px;
+    transform: perspective(160px) rotateY(-15deg);
+    z-index: 0;
+}
+.caraousel .item img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* screenshots section */
+#screenshots {
+    margin: 50px 0px;
+}
+.side-to-side {
+    margin: 120px 0px;
+    display: flex;
+    justify-content: center;
+}
+#reverse-side {
+    flex-direction: row-reverse;
+}
+#mid-content {
+    margin-right: 12%;
+}
+.screen {
+    display: flex;
+    max-width: 29vw;
+}
+.backText {
+    position: relative;
+    transform: rotate(90deg);
+    font-size: 11rem;
+    z-index: -10;
+    right: 32vw;
+    color: #cbc9c9;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+#backText02 {
+    right: 25rem;
+}
+#backText03 {
+    right: 23rem;
+}
+.sideImage {
+    width: 18vw;
+    margin: 0px 35px;
+}
+.content {
+    max-width: 30vw;
+    margin: 65px 10px;
+}
+.content img {
+    width: 5rem;
+    margin: 16px 0px;
+}
+.content-title {
+    margin: 10px 0px;
+    font-size: 1.9rem;
+}
+.content-para {
+    font-size: 1rem;
+    color: #878787;
+}
+
+/* reviews section */
+#reviews {
+    max-width: 80%;
+    margin: auto;
+}
+.all-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 44px;
+}
+.review {
+    margin: 25px 35px;
+    max-width: 30vw;
+}
+.review i {
+    font-size: 2rem;
+    color: #5b81ec;
+    margin-bottom: 10px;
+}
+.quote-right {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.byLine {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+/* footer */
+/* footer-banner */
+#footer-banner {
+    background: #5b81ec;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
+}
+#img-footer {
+    width: 36vw;
+}
+.download-card {
+    max-width: 33%;
+}
+.download-card p {
+    margin: 18px 0px;
+    max-width: 73%;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 21px;
+}
+.download-images img {
+    width: 120px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.footer-bottom {
+    background: #383a53;
+}
+.footer-bottom hr {
+    max-width: 80%;
+    margin: auto;
+    height: 1px;
+    background: #606060;
+    border: none;
+}
+.footer-bottom p {
+    color: #a3a3a3;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 20px 0px;
+}
+.footer-nav {
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+}
+.footer-nav ul {
+    display: flex;
+    column-gap: 2rem;
+    list-style: none;
+}
+.footer-nav ul li a{
+    text-decoration: none;
+    color: #dadada;
+}
+.fa-brands{
+    margin: 0px 15px;
+    color: #dadada;
+}

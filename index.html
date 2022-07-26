@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/rainy1.png">
+    <!-- google fonts using apis -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- external stylesheet and font -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5e5c884eec.js" crossorigin="anonymous"></script>
+    <title>Weather WebApp</title>
+
+<body>
+    <header>
+        <!-- navigation bar -->
+        <nav id="navbar">
+            <a href="/"> <img src="images/logo.png" id="logo" alt="logo"> </a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+            <div class="social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-google-plus-g"></i>
+            </div>
+        </nav>
+        <!-- header content -->
+        <div id="banner">
+            <div class="banner-desc">
+                <h1>Get the most fun weather app</h1>
+                <button class="btn-primary btn-download"> Download </button>
+                <button class="btn-primary btn-features"> Features </button>
+            </div>
+            <img src="images/phone1.png" alt="Smartphone" />
+        </div>
+    </header>
+    <!-- features section -->
+    <section id="features">
+        <h2 class="title">Perfect Features</h2>
+        <p class="small-desc">Only neccessary</p>
+        <div class="card-wrapper">
+            <div class="sm-card">
+                <i class="fa-solid fa-gem"></i>
+                <div class="card-text">
+                    <h3>Usability</h3>
+                    <p>
+                        Sometimes the simplest things are the hardest to find.
+                        So we created a new line for everyday life.
+                    </p>
+                </div>
+            </div>
+            <div class="sm-card">
+                <i class="fa-solid fa-layer-group"></i>
+                <div class="card-text">
+                    <h3>Parallax Effect</h3>
+                    <p>
+                        Sometimes the simplest things are the hardest to find.
+                        So we created a new line for everyday life.
+                    </p>
+                </div>
+            </div>
+            <div class="sm-card">
+                <i class="fa-solid fa-print"></i>
+                <div class="card-text">
+                    <h3>Unlimited Colors</h3>
+                    <p>
+                        Sometimes the simplest things are the hardest to find.
+                        So we created a new line for everyday life.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- screens caraousel -->
+        <div class="caraousel">
+            <div class="item" id="item1"><img src="images/drag1.png" alt=""></div>
+            <div class="item" id="item2"><img src="images/drag3.png" alt=""></div>
+            <div class="item" id="item3"><img src="images/drag2.png" alt=""></div>
+            <div class="item" id="item4"><img src="images/drag3.png" alt=""></div>
+            <div class="item" id="item5"><img src="images/drag1.png" alt=""></div>
+        </div>
+    </section>
+    <!-- screenshots section -->
+    <section id="screenshots">
+        <h2 class="title">Screenshots</h2>
+        <p class="small-desc">The brightest images</p>
+        <div class="side-to-side">
+            <div class="screen">
+                <img src="images/screen01.png" alt="screen01" class="sideImage" />
+                <h1 class="backText">Cloudy</h1>
+            </div>
+            <div class="content">
+                <img src="images/cloud1.png" alt="">
+                <h3 class="content-title">When the clouds</h3>
+                <p class="content-para">Variable information on the air humudity, the feeling of the weather, and the ability to share this with your friends.
+                </p>
+            </div>
+        </div>
+        <div class="side-to-side" id="reverse-side">
+            <div class="screen">
+                <img src="images/screen02.png" alt="screen02" class="sideImage" />
+                <h1 class="backText" id="backText02">Sunny</h1>
+            </div>
+            <div class="content" id="mid-content">
+                <img src="images/sun1.png" alt="">
+                <h3 class="content-title">When the clouds</h3>
+                <p class="content-para">Sometimes the simplest things are the hardest to find. So we created a new line for everyday life. Sometimes the simplest things
+                </p>
+            </div>
+        </div>
+        <div class="side-to-side">
+            <div class="screen">
+                <img src="images/screen03.png" alt="screen03" class="sideImage" />
+                <h1 class="backText" id="backText03">Rainy</h1>
+            </div>
+            <div class="content">
+                <img src="images/rainy1.png" alt="rainy1">
+                <h3 class="content-title">When the rain</h3>
+                <p class="content-para">Sometimes the simplest things are the hardest to find. So we created a new line for everyday life. Sometimes the simplest things
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- reviews section -->
+    <section id="reviews">
+        <h2 class="title">What reviews are saying</h2>
+        <p class="small-desc">Reviews</p>
+        <!-- all-reviews wrapper div -->
+        <div class="all-reviews">
+            <div class="review">
+                <i class="fa-solid fa-quote-left"></i>
+                <h3 class="review-content">
+                    What art offers is space - a certain breathing room for spirit.
+                </h3>
+                <div class="byLine">John Updike</div>
+                <div class="quote-right"><i class="fa-solid fa-quote-right"></i></div>
+            </div>
+            <div class="review">
+                <i class="fa-solid fa-quote-left"></i>
+                <h3 class="review-content">
+                   We do not se nature with our eyes, but with our understandings and our hearts. 
+                </h3>
+                <div class="byLine">William Hazlitt</div>
+                <div class="quote-right"><i class="fa-solid fa-quote-right"></i></div>
+            </div>
+            <div class="review">
+                <i class="fa-solid fa-quote-left"></i>
+                <h3 class="review-content">
+                   The only courage that matter is the kind that gets you from one moment to the next.
+                </h3>
+                <div class="byLine">Mignon McLaughlin</div>
+                <div class="quote-right"><i class="fa-solid fa-quote-right"></i></div>
+            </div>
+            <div class="review">
+                <i class="fa-solid fa-quote-left"></i>
+                <h3 class="review-content">
+                    No man has good enough memory to be a successful liar.
+                </h3>
+                <div class="byLine">Abraham Lincoln</div>
+                <div class="quote-right"><i class="fa-solid fa-quote-right"></i></div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer id="download">
+        <div id="footer-banner">
+            <div class="download-card">
+                <h1>How to Download the app?</h1>
+                <p>Just download the app from the store. Simple,
+                    nice and user-friendly application of the weather.
+                    Only relevant and useful information.
+                </p>
+                <div class="download-images">
+                    <img src="images/appstor.png" alt="AppStore">
+                    <img src="images/googleplay.png" alt="GooglePlay">
+                </div>
+            </div>
+            <img src="images/appdownload1.png" alt="appdownload1" id="img-footer"/>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-nav">
+                <a href="/"> <img src="images/footer-logo.png" id="footer-logo" alt="logo"> </a>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#download">Download</a></li>
+                </ul>
+                <div class="social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                </div>
+            </div>
+            <hr />
+            <p>All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</head>
